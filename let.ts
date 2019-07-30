@@ -33,3 +33,10 @@ var i=1;
 let j=0;
 let j=1;   
 //Uncaught SyntaxError: Identifier 'j' has already been declared
+
+
+/** 函数内不能用let覆盖参数，会报错 */
+function abc(a) {
+    let a = 5;
+}
+//Uncaught SyntaxError: Identifier 'a' has already been declared
